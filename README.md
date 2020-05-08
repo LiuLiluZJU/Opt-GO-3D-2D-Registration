@@ -1,14 +1,6 @@
 # Opt-GO-3D-2D-Registration
 浙大机器人交叉创新实践课程参考代码：基于CMA-ES算法和梯度方向测度（GO）的3D/2D医学图像配准算法（Python实现）
 
-参考文献：
-
-3D–2D image registration for target localization in spine surgery: investigation of similarity metrics providing robustness to content mismatch（T De Silva. 2016）
-
-Fast calculation of the exact radiological path for a three-dimensional CT array（Siddon. 1985）
-
-Accelerated ray tracing for radiotherapy dose calculations on a GPU（Greef. 2009）
-
 ### 一、安装依赖
 * Python 3
 * Numpy
@@ -60,3 +52,10 @@ cd CUDA_DRR_Metric
 ./cuda_debugger.sh
 ```
 注意：`cuda_debugger.sh`文件中的路径需要自行修改；编译出的动态链接库（.so文件）使用方法参考3D/2D Registration模块源码
+
+## 四、参考文献
+3D–2D image registration for target localization in spine surgery: investigation of similarity metrics providing robustness to content mismatch（T De Silva. 2016）
+
+Fast calculation of the exact radiological path for a three-dimensional CT array（Siddon. 1985）
+
+Accelerated ray tracing for radiotherapy dose calculations on a GPU（Greef. 2009）
