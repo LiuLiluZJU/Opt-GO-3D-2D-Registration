@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSiddonGpu.a  CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o
+/usr/bin/ranlib libSiddonGpu.a
