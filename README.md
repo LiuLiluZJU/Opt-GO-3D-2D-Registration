@@ -51,7 +51,7 @@ python 3D_2D_Registration_Multiview.py
 cd CUDA_DRR_Metric
 ./cuda_debugger.sh
 ```
-注意：`cuda_debugger.sh`文件中的路径需要自行修改；编译出的动态链接库（.so文件）使用方法参考3D/2D Registration模块源码
+注意：`cuda_debugger.sh`文件中的路径需要自行修改；编译出的动态链接库（.so文件）使用方法参考3D/2D Registration模块源码；Windows下编译需要安装可视化cmake工具和Visual Studio（推荐使用VS2017），编译完成后得到的动态链接库为.dll文件
 
 ## 四、参考文献
 3D–2D image registration for target localization in spine surgery: investigation of similarity metrics providing robustness to content mismatch（T De Silva. 2016）
