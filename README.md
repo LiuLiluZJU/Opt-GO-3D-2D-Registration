@@ -1,5 +1,5 @@
 # Opt-GO-3D-2D-Registration
-基于CMA-ES算法和梯度方向测度（GO）的3D/2D医学图像配准算法（Python实现）
+浙大机器人交叉创新实践课程参考代码：基于CMA-ES算法和梯度方向测度（GO）的3D/2D医学图像配准算法（Python实现）
 
 参考文献：
 
