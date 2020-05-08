@@ -60,10 +60,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leko/CUDA_DRR_Metric/SiddonClassLib/src
+CMAKE_SOURCE_DIR = /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build
+CMAKE_BINARY_DIR = /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SiddonGpu.dir/depend.make
@@ -77,21 +77,21 @@ include CMakeFiles/SiddonGpu.dir/flags.make
 CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o: CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.depend
 CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o: CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.cmake
 CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o: ../SiddonLib/siddon_class.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o"
-	cd /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib && /usr/local/bin/cmake -E make_directory /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/.
-	cd /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o -D generated_cubin_file:STRING=/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o.cubin.txt -P /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o"
+	cd /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib && /usr/local/bin/cmake -E make_directory /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/.
+	cd /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o -D generated_cubin_file:STRING=/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o.cubin.txt -P /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.cmake
 
 # Object files for target SiddonGpu
 SiddonGpu_OBJECTS =
 
 # External object files for target SiddonGpu
 SiddonGpu_EXTERNAL_OBJECTS = \
-"/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o"
+"/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o"
 
 libSiddonGpu.a: CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o
 libSiddonGpu.a: CMakeFiles/SiddonGpu.dir/build.make
 libSiddonGpu.a: CMakeFiles/SiddonGpu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libSiddonGpu.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libSiddonGpu.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SiddonGpu.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SiddonGpu.dir/link.txt --verbose=$(VERBOSE)
 
@@ -105,6 +105,6 @@ CMakeFiles/SiddonGpu.dir/clean:
 .PHONY : CMakeFiles/SiddonGpu.dir/clean
 
 CMakeFiles/SiddonGpu.dir/depend: CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o
-	cd /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leko/CUDA_DRR_Metric/SiddonClassLib/src /home/leko/CUDA_DRR_Metric/SiddonClassLib/src /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SiddonGpu.dir/depend
 

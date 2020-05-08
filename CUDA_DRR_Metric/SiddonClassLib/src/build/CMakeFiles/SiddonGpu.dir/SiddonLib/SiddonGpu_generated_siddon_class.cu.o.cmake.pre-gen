@@ -58,18 +58,18 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/local/bin/cmake") # path
-set(source_file "/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/SiddonLib/siddon_class.cu") # path
-set(NVCC_generated_dependency_file "/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.depend") # path
+set(source_file "/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/SiddonLib/siddon_class.cu") # path
+set(NVCC_generated_dependency_file "/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/SiddonGpu_generated_siddon_class.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/local/share/cmake-3.17/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/local/share/cmake-3.17/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/.") # path
-set(generated_file_internal "/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o") # path
-set(generated_cubin_file_internal "/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o.cubin.txt") # path
+set(generated_file_path "/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/.") # path
+set(generated_file_internal "/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o") # path
+set(generated_cubin_file_internal "/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles/SiddonGpu.dir/SiddonLib/./SiddonGpu_generated_siddon_class.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda-9.0/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS  ;; ) # list

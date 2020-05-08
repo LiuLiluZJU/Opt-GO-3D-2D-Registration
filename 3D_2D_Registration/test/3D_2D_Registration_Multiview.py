@@ -72,6 +72,8 @@ def cost_function(x):
     countcount += 1
     print(countcount)
     paras = np.multiply(x, search_range)
+
+    # You can choose to apply singe-view or multi-view for registration. Just simply comment specific view you don't use.
     # drr1 = projector_ap.update([np.deg2rad(paras[0]), np.deg2rad(paras[1]), np.deg2rad(paras[2]), paras[3], paras[4], 728 + paras[5]])
     # result1 = projector_ap.GO_metric(x_ray_image_ap)
     drr2 = projector_lat.update([np.deg2rad(paras[2]), np.deg2rad(paras[1]), np.deg2rad(-paras[0]), paras[5], paras[4], 699 - paras[3]])

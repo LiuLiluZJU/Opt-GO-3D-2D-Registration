@@ -61,10 +61,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leko/CUDA_DRR_Metric/SiddonClassLib/src
+CMAKE_SOURCE_DIR = /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build
+CMAKE_BINARY_DIR = /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -91,14 +91,14 @@ clean: CMakeFiles/SiddonGpu.dir/clean
 CMakeFiles/SiddonGpu.dir/all:
 	$(MAKE) -f CMakeFiles/SiddonGpu.dir/build.make CMakeFiles/SiddonGpu.dir/depend
 	$(MAKE) -f CMakeFiles/SiddonGpu.dir/build.make CMakeFiles/SiddonGpu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles --progress-num=1,2 "Built target SiddonGpu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles --progress-num=1,2 "Built target SiddonGpu"
 .PHONY : CMakeFiles/SiddonGpu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SiddonGpu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SiddonGpu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/SiddonGpu.dir/rule
 
 # Convenience name for target.

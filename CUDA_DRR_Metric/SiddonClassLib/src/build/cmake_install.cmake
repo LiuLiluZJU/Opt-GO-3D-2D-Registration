@@ -1,4 +1,4 @@
-# Install script for directory: /home/leko/CUDA_DRR_Metric/SiddonClassLib/src
+# Install script for directory: /home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/leko/CUDA_DRR_Metric/SiddonClassLib/src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/leko/Optimization_GO/CUDA_DRR_Metric/SiddonClassLib/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
