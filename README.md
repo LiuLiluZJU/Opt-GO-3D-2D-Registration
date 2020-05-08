@@ -37,7 +37,7 @@ python 3D_2D_Registration_Multiview.py
 ### 运行结果
 ![avatar](Figure_1.png)
 
-左侧图片是术中采集的侧位（X光）胸片，右侧图片是术前胸腔CT产生的Digitally Reconstructed Radiography（DRR）
+左侧图片是术中采集的侧位（X光）胸片，右侧图片是配准后的术前胸腔CT产生的Digitally Reconstructed Radiography（DRR）
 
 ## 三、Digitally Reconstructed Radiography（DRR）
 该模块包含：
