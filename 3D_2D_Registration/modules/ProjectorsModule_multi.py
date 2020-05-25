@@ -184,18 +184,18 @@ class SiddonGpu(object):
 
         # Compute the transformation matrix and its inverse (itk always needs the inverse)
         if self.Direction == 'ap':
-            Tr_ap = rm.get_rigid_motion_mat_from_euler(np.deg2rad(0), 'z', np.deg2rad(0), 'y', np.deg2rad(90), 'x', 0, 0, 0)
-            Tr_delta = rm.get_rigid_motion_mat_from_euler(rotz, 'z', roty, 'y', rotx, 'x', tx, ty, tz)
+            Tr_ap = rm.get_rigid_motion_mat_from_euler(np.deg2rad(-90), 'x', np.deg2rad(0), 'y', np.deg2rad(0), 'z', 0, -728, 0)
+            Tr_delta = rm.get_rigid_motion_mat_from_euler(rotx, 'x', roty, 'y', rotz, 'z', tx, ty, tz)
             Tr = np.dot(Tr_delta, Tr_ap)
             # print("ap tr:", Tr)
         elif self.Direction == 'lat':
-            Tr_lat = rm.get_rigid_motion_mat_from_euler(np.deg2rad(90), 'x', np.deg2rad(0), 'y', np.deg2rad(90), 'z', 0, 0, 0)
+            Tr_lat = rm.get_rigid_motion_mat_from_euler(np.deg2rad(0), 'x', np.deg2rad(90), 'y', np.deg2rad(-90), 'z', -699, 0, 0)
             Tr_delta = rm.get_rigid_motion_mat_from_euler(rotx, 'x', roty, 'y', rotz, 'z', tx, ty, tz)
             Tr = np.dot(Tr_delta, Tr_lat)
             # print("lat tr:", Tr)
         else:
             raise NotImplementedError()
-        invT = np.linalg.inv(Tr).astype(np.float32)  # very important conversion to float32, otherwise the code crashes
+        invT = np.array(Tr).astype(np.float32)  # very important conversion to float32, otherwise the code crashes
 
         # Assign value to inverse matrix (GPU)
         for x in range(4):

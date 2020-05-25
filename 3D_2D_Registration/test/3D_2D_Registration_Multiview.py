@@ -74,9 +74,9 @@ def cost_function(x):
     paras = np.multiply(x, search_range)
 
     # You can choose to apply singe-view or multi-view for registration. Just simply comment specific view you don't use.
-    # drr1 = projector_ap.update([np.deg2rad(paras[0]), np.deg2rad(paras[1]), np.deg2rad(paras[2]), paras[3], paras[4], 728 + paras[5]])
+    # drr1 = projector_ap.update([np.deg2rad(paras[0]), np.deg2rad(paras[1]), np.deg2rad(paras[2]), paras[3], paras[4], paras[5]])
     # result1 = projector_ap.GO_metric(x_ray_image_ap)
-    drr2 = projector_lat.update([np.deg2rad(paras[2]), np.deg2rad(paras[1]), np.deg2rad(-paras[0]), paras[5], paras[4], 699 - paras[3]])
+    drr2 = projector_lat.update([np.deg2rad(paras[0]), np.deg2rad(paras[1]), np.deg2rad(paras[2]), paras[3], paras[4], paras[5]])
     result2 = projector_lat.GO_metric(x_ray_image_lat)
 
     result = result2
@@ -212,8 +212,8 @@ if __name__ == '__main__':
     projector_lat = pj.SiddonGpu(projector_info_lat)
 
     # Show initial DRRs
-    drr1 = projector_ap.update([np.deg2rad(0), np.deg2rad(0), np.deg2rad(0), 0, 0, 728])
-    drr2 = projector_lat.update([np.deg2rad(0), np.deg2rad(0), np.deg2rad(0), 0, 0, 699])
+    drr1 = projector_ap.update([np.deg2rad(0), np.deg2rad(0), np.deg2rad(0), 0, 0, 0])
+    drr2 = projector_lat.update([np.deg2rad(0), np.deg2rad(0), np.deg2rad(0), 0, 0, 0])
     plt.subplot(121)
     plt.imshow(drr1, cmap='gray')
     plt.subplot(122)
@@ -298,11 +298,11 @@ if __name__ == '__main__':
 
     # Show results
     delta_paras = np.multiply(res.xbest[0:6], search_range[0:6])
-    drr_final_ap = projector_lat.update([np.deg2rad(delta_paras[2]), np.deg2rad(delta_paras[1]), -np.deg2rad(delta_paras[0]), delta_paras[5], delta_paras[4], 699 - delta_paras[3]])
+    drr_final_lat = projector_lat.update([np.deg2rad(delta_paras[0]), np.deg2rad(delta_paras[1]), np.deg2rad(delta_paras[2]), delta_paras[3], delta_paras[4], delta_paras[5]])
     plt.subplot(121)
     plt.imshow(x_ray_cropped_lat, cmap='gray')
     plt.subplot(122)
-    plt.imshow(drr_final_ap, cmap='gray')
+    plt.imshow(drr_final_lat, cmap='gray')
     plt.show()
     toc = time.time()
     print("total time:", toc - tic)
