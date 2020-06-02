@@ -1,0 +1,2 @@
+*.cu linguist-language=python
+*.cuh linguist-language=python
